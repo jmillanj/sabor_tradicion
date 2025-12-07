@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornadas de Cocina Tradicional</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+    <include src="views/header.html"></include>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 font-serif text-primary">Nuestros Chefs</h1>
+            <p class="lead text-muted">Conoce a los maestros de la cocina que nos acompañarán.</p>
+        </div> 
+
+        <!-- Contenedor Flex -->
+        <div class="chefs-flex-grid">
+            
+            <article class="chef-card">
+                <div class="chef-card__media">
+                    <img src="assets/images/chef1.jpg" alt="Chef1">
+                </div>
+                <div class="chef-card__body">
+                    <h2 class="chef-card__name">Elena Sainz</h2>
+                    <p class="chef-card__bio">Vanguardia y tradición unidas en el plato. Especialista en productos del mar.</p>
+                </div>
+            </article>
+
+            <article class="chef-card">
+                <div class="chef-card__media">
+                    <img src="assets/images/chef2.jpg" alt="Chef2">
+                </div>
+                <div class="chef-card__body">
+                    <h2 class="chef-card__name">Antonio López</h2>
+                    <p class="chef-card__bio">El equilibrio perfecto entre creatividad técnica y la memoria gustativa de la infancia.</p>
+                </div>
+            </article>
+
+             <article class="chef-card">
+                <div class="chef-card__media">
+                    <img src="assets/images/chef3.jpg" alt="Chef3">
+                </div>
+                <div class="chef-card__body">
+                    <h2 class="chef-card__name">Jordi Torrot</h2>
+                    <p class="chef-card__bio">La esencia de la cocina catalana llevada a la máxima expresión artística.</p>
+                </div>
+            </article>
+
+             <article class="chef-card">
+                <div class="chef-card__media">
+                    <img src="assets/images/chef4.jpg" alt="Chef4">
+                </div>
+                <div class="chef-card__body">
+                    <h2 class="chef-card__name">María Jesús Rodríguez</h2>
+                    <p class="chef-card__bio">Embajadora de los productos de nuestra localidad.</p>
+                </div>
+            </article>
+
+             <article class="chef-card">
+                <div class="chef-card__media">
+                    <img src="assets/images/chef5.jpg" alt="Chef5">
+                </div>
+                <div class="chef-card__body">
+                    <h2 class="chef-card__name">Pedro V. Herrainz</h2>
+                    <p class="chef-card__bio">La pasión por los platos de caza.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <include src="views/footer.html"></include>
+</body>
+</html>

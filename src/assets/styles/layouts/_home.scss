@@ -1,0 +1,118 @@
+.poster-layout {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @supports (display: grid) {
+    @media (width >= 992px) {
+      display: grid;
+      grid-template: "header visual info" auto "header visual info" 1fr / 1fr 1.5fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      min-height: 80vh;
+    }
+  }
+
+  &__header {
+    grid-area: header;
+    text-align: right;
+
+    @media (width <= 991px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $headings-font-family;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    color: var(--bs-primary);
+    line-height: 1.1;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    color: var(--bs-gray-600);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__visual {
+    grid-area: visual;
+    position: relative;
+
+    // Definimos este elemento como contenedor
+    container-type: inline-size;
+    container-name: poster-visual;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: 0 20px 40px rgb(0 0 0 / 10%);
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--bs-primary);
+    color: white;
+    border-radius: 50%;
+
+    // Tamaño base (móvil o contenedor pequeño)
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgb(192 86 33 / 40%);
+    transition: all 0.3s ease;
+
+    span:first-child {
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    span:last-child {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    text-align: left;
+    font-size: 1.2rem;
+
+    @media (width <= 991px) {
+      text-align: center;
+    }
+  }
+}
+
+// Si el contenedor de la imagen mide más de 400px, el badge se hace más grande
+@container poster-visual (min-width: 400px) {
+  .poster-layout__badge {
+    width: 130px;
+    height: 130px;
+    bottom: -30px;
+    right: -30px;
+
+    span:first-child {
+      font-size: 2rem;
+    }
+
+    span:last-child {
+      font-size: 1.2rem;
+    }
+  }
+}

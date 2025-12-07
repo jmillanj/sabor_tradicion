@@ -1,0 +1,24 @@
+@use "dependencies";
+@import "variables";
+
+// DEFINICIÓN DE CAPAS DE CASCADA
+@layer vendors, layout, pages;
+
+// Para los iconos
+@import "/node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+// La capa @layer vendors está definida en _bootstrap-custom.scss)
+@import "vendors/bootstrap-custom";
+
+
+// Estilos de la Portada.
+@layer layout {
+    @import "layouts/home";
+}
+
+// Estilos de las páginas.
+@layer pages {
+    @import "pages/participants";
+    @import "pages/article";
+    @import "pages/contact";
+}

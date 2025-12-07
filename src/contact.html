@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornadas de Cocina Tradicional</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+    <include src="views/header.html"></include>
+
+    <section class="inscription-hero">
+        <div class="inscription-hero__content container">
+            <h1 class="mb-4">Reserva tu plaza</h1>
+            <p class="mb-5 lead">Aforo limitado. Inscríbete ahora para los talleres de cocina.</p>
+            
+            <form class="inscription-form">
+                <div class="mb-3">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Confirmar Asistencia</button>
+            </form>
+        </div>
+    </section>
+
+    <include src="views/footer.html"></include>
+</body>

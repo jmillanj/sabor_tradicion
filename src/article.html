@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornadas de Cocina Tradicional</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+    <include src="views/header.html"></include>
+
+     <main class="container py-5">
+        <!-- Artículo principal -->
+        <article class="recipe-post">
+            
+            <!-- Cabecera del Artículo -->
+            <header class="recipe-post__header text-center mb-5">
+                <span class="badge bg-secondary mb-2 text-uppercase">Artículos</span>
+                <h1 class="display-4 font-serif fw-bold text-primary">El arte del fuego lento</h1>
+                <div class="text-muted fst-italic mt-2">
+                    <span>Por Juan M. Millán</span> | 
+                    <span><i class="fa-regular fa-calendar"></i> 02 Dic 2025</span> | 
+                    <span><i class="fa-regular fa-clock"></i> 5 min de lectura</span>
+                </div>
+            </header>
+
+            <!-- Cuerpo del contenido -->
+            <div class="recipe-post__content">
+                <p class="lead">Vivimos en una época de inmediatez, donde la comida rápida y el microondas han desplazado a los guisos de tres horas. Sin embargo, recuperar el "chup-chup" no es solo una cuestión de sabor, sino de salud mental y nutricional.</p>
+
+                <h2>La paciencia como ingrediente principal</h2>
+                <p>El secreto de la cocina tradicional no reside en especias exóticas ni en herramientas carísimas, sino en el control del tiempo. Cuando cocinamos a baja temperatura, permitimos que las fibras de la carne se relajen y que el colágeno se convierta en gelatina, otorgando esa textura melosa que se deshace en la boca.</p>
+                
+                <p>Además, las verduras caramelizan sus propios azúcares lentamente, aportando una profundidad de sabor (la reacción de Maillard) que es imposible conseguir con un salteado rápido a fuego fuerte. Es un proceso químico que requiere calma.</p>
+
+                <figure class="recipe-post__figure">
+                    <img src="assets/images/cazuela.jpg" alt="Guiso tradicional en barro">
+                    <figcaption>Cazuela de barro tradicional: el mejor conductor para un calor uniforme.</figcaption>
+                </figure>
+
+                <h2>Herramientas esenciales</h2>
+                <p>Para iniciarse en este mundo, no hace falta equipar la cocina desde cero. Sin embargo, hay ciertos elementos que marcan la diferencia entre un buen plato y uno excelente. Aquí tienes nuestra lista de imprescindibles:</p>
+
+                <ul class="list-group list-group-flush mb-5 shadow-sm rounded">
+                    <li class="list-group-item p-3">
+                        <i class="fa-solid fa-fire-burner text-primary me-2"></i> 
+                        <strong>Cazuela de barro o hierro fundido:</strong> Retienen el calor de manera excepcional y lo distribuyen suavemente.
+                    </li>
+                    <li class="list-group-item p-3">
+                        <i class="fa-solid fa-spoon text-primary me-2"></i> 
+                        <strong>Cuchara de madera:</strong> Vital para no alterar el sabor metálico ni dañar el fondo de los recipientes.
+                    </li>
+                    <li class="list-group-item p-3">
+                        <i class="fa-solid fa-temperature-low text-primary me-2"></i> 
+                        <strong>Difusor de calor:</strong> Si cocinas con gas, es una herramienta económica y vital para evitar puntos calientes que quemen el guiso.
+                    </li>
+                    <li class="list-group-item p-3">
+                        <i class="fa-solid fa-jar text-primary me-2"></i> 
+                        <strong>Caldo casero:</strong> La base líquida es el alma del guiso. Evita los cubitos industriales siempre que puedas.
+                    </li>
+                </ul>
+
+                <blockquote>
+                    "La cocina es un lenguaje mediante el cual se puede expresar armonía, felicidad, belleza, poesía, complejidad, magia, humor, provocación, cultura."
+                </blockquote>
+
+                <h2>El respeto por el producto</h2>
+                <p>De nada sirve tener la mejor técnica si el producto no acompaña. En nuestras jornadas haremos hincapié en el uso de productos de kilómetro cero. Apoyar a los agricultores locales no solo mejora la economía de la región, sino que garantiza que los ingredientes llegan a la olla en su punto óptimo de maduración.</p>
+
+                <figure class="recipe-post__figure">
+                    <img src="assets/images/productos.jpg" alt="Ingredientes frescos">
+                </figure>
+
+                <h3>Únete a nosotros</h3>
+                <p>Si este artículo te ha abierto el apetito, no dudes en inscribirte en los talleres prácticos que realizaremos este fin de semana. Aprenderás a dominar los tiempos, a escoger las mejores legumbres y a perderle el miedo a la olla express.</p>
+            </div>
+
+            <!-- Pie del artículo -->
+            <div class="mt-5 pt-4 border-top">
+                <p class="small text-muted">
+                    <strong>Etiquetas:</strong> 
+                    <a href="#" class="text-decoration-none">#CocinaTradicional</a>,
+                    <a href="#" class="text-decoration-none">#Recetas</a>
+                </p>
+            </div>
+
+        </article>
+    </main>
+    
+    <include src="views/footer.html"></include>
+</body>

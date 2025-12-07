@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornadas de Cocina Tradicional</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+    <include src="views/header.html"></include>
+
+    <main class="poster-layout">
+        
+        <!-- Área: Título -->
+        <header class="poster-layout__header">
+            <h1 class="poster-layout__title">Recuperando<br>nuestras raíces</h1>
+            <p class="poster-layout__subtitle">X Jornadas Gastronómicas de Invierno</p>
+        </header>
+
+        <!-- Área: Imagen Principal (Póster) -->
+        <div class="poster-layout__visual">
+            <img src="assets/images/portada.jpg" alt="Cocina tradicional">
+            <div class="poster-layout__badge">
+                <span>06-07</span>
+                <span>DIC</span>
+            </div>
+        </div>
+
+        <!-- Área: Info Adicional -->
+        <div class="poster-layout__info">
+            <p>Talleres, catas y charlas magistrales con los mejores chefs de la región.</p>
+            <a href="participants.html" class="btn btn-primary mt-3">Ver Ponentes</a>
+        </div>
+
+    </main>
+
+    <include src="views/footer.html"></include>
+</body>
+</html>

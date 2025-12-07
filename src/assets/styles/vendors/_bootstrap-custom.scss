@@ -1,0 +1,22 @@
+// PERSONALIZACIÓN DE BOOTSTRAP
+@use "sass:map";
+
+// Funciones de bootstrap 
+@import "bootstrap/scss/functions";
+
+// Variables de Bootstrap
+@import "bootstrap/scss/variables";
+
+// Merge de colores
+$custom-colors: (
+    "terracotta": $primary,
+    "sage": #9ae6b4,
+    "cream": #fffff0
+);
+$theme-colors: map.merge($theme-colors, $custom-colors);
+
+// Envolvemos la generación de CSS en la capa 'vendors'
+@layer vendors {
+    @import "bootstrap/scss/mixins";
+    @import "bootstrap/scss/bootstrap";
+}
