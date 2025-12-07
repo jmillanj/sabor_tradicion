@@ -4,6 +4,18 @@
 // Funciones de bootstrap 
 @import "bootstrap/scss/functions";
 
+// Personalizamos el componente CARD
+$card-border-color: rgba($primary, 0.2);
+$card-cap-bg: transparent;
+
+// Personalizamos el componente BUTTON
+$btn-border-radius: 2rem;
+
+// 3. Variables de Bootstrap (Aquí Bootstrap lee tus cambios)
+@import "bootstrap/scss/variables";
+
+
+
 // Variables de Bootstrap
 @import "bootstrap/scss/variables";
 
